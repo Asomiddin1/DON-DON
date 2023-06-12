@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: Arial,  sans-serif;
+    text-align: center;
+    background-image: url('./GettyImages-1137975063\(1\).jpg');
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    min-height: 800px;
+}
+
+html{
+    background-color: black;
+}
+
+.lol{
+    margin-top: 50px;
+    text-shadow: 0 0 20px #fff,
+    0 0 50px white,
+    0 0 100px white,
+    0 0 500px white;
+
+    color: #fff;
+    box-shadow: 0 0 70px 1px rgb(24, 155, 144)
+    ,0 0 10px 1px rgb(255, 255, 255),
+    inset 0 0 10px rgb(154, 248, 255);
+    border-radius: 50px;
+
+}
+i{
+    display: inline-block;
+    transition: .5s;
+}
+
+i:hover{
+    scale: 1.5;
+    color: red;
+}
+h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.block{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.sug{
+    color: green;
+}
+.dan{
+    color: red;
+}
+.game_container{
+    min-height: 100vh;
+    text-align: center;
+}
+
+#game{
+    display: flex;
+    justify-content: space-around;    
+}
+
+#player , #computer{
+  padding-top: 150px;
+}
+#player{
+    width: 600px;
+    height: 250px;
+    margin-right: 150px;
+    color: #fff;
+}
+i{
+    margin: 40px;
+    animation-name: beat;
+    animation-duration: .5s;
+    animation-delay: .3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes beat {
+    0%, 100%{
+        transform: rotate(45deg);
+        scale: 1.2;
+    }
+    50%{
+        transform: rotate(-45deg);
+        scale: .8; 
+    }
+
+}
+
+#computer{
+    width: 400px;
+    height: 300px;
+    color: #fff;
+}
+#result{
+    margin-top: 480px;
+    margin-left: 500px;
+    width: 800px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+
+    background: #fff;
+    box-shadow: 0px 0px 35px 2px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    padding: 2px 50px;
+}
+.result{
+    top: 40%;
+    left: 35%;
+    right: 50%;
+    position: fixed;
+    width: 400px;
+    height: 400px;
+
+    background: #fff;
+    box-shadow: 0px 0px 35px 2px rgb(0 0 0 / 25%);
+    border-radius: 32px;
+    padding: 2px 50px;
+}
+
+#computer-choise{
+  font-size: 24px;
+  font-weight: bold;
+
+}
+.cont{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
